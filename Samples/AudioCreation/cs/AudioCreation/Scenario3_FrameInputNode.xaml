@@ -60,7 +60,10 @@
                     <Border x:Name="speakerContainer" BorderThickness="0" Background="#4A4A4A" MinWidth="120" MinHeight="45" Margin="0,20,0,0">
                         <TextBlock x:Name="speaker" Text="Output Device" VerticalAlignment="Center" HorizontalAlignment="Center" />
                     </Border>
-                    <Button x:Name="generateButton" Content="Generate Audio" Click="Button_Click" MinWidth="120" MinHeight="45" Margin="0,50,0,0"/>
+                    <TextBox x:Name="streamCountText" Text="1" Margin="50, 80"/>
+                    <TextBox x:Name="channelCountText" Text="2" TextChanged="channelCountText_TextChanged" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="50, 130"/>
+                    <Button x:Name="createNodesButton" Content="Create Nodes" Click="createNodesButton_Click" MinWidth="120" MinHeight="45" Margin="140,70,0,0"/>
+                    <Button x:Name="generateButton" Content="Generate Audio" Click="Button_Click" MinWidth="120" MinHeight="45" Margin="0,80,0,0"/>
                 </RelativePanel>
             </ScrollViewer>
             
